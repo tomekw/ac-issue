@@ -1,6 +1,6 @@
 FROM ruby:2.3.1-alpine
 
-RUN apk --update --no-cache add build-base libxml2-dev libxslt-dev && mkdir -p /app
+RUN apk --update --no-cache add build-base git libxml2-dev libxslt-dev && mkdir -p /app
 
 WORKDIR /app
 
